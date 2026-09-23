@@ -1,0 +1,8 @@
+metric,Illinois_Test_Set,Non_Illinois_Test_Set,Training_Set_Pool
+N_samples,486.0,6666.0,30503.0
+N_sites,4.0,5.0,42.0
+Turbidity_Mean,6.24,16.3,26.78
+Turbidity_Median,5.0,8.95,16.8
+Turbidity_Std,4.09,29.14,55.75
+Turbidity_Var,16.73,849.0,3107.94
+Turbidity_IQR,4.67,16.6,25.7

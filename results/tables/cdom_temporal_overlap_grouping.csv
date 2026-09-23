@@ -1,0 +1,7 @@
+site_no,station_nm,basin,n_samples,min_date,max_date,active_era,temporal_overlap_group
+05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,379,2015-08-03,2020-01-19,2015-2020,Isolated_Era_1 (Zero Overlap with other 5 sites)
+14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,944,2021-04-05,2024-09-14,2021-2024,Overlapping_Era_2 (Mutually Co-Active 2021-2024)
+14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,383,2021-06-19,2024-07-26,2021-2024,Overlapping_Era_2 (Mutually Co-Active 2021-2024)
+01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,720,2022-05-10,2024-07-04,2021-2024,Overlapping_Era_2 (Mutually Co-Active 2021-2024)
+441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,63,2022-05-17,2024-07-01,2021-2024,Overlapping_Era_2 (Mutually Co-Active 2021-2024)
+444306122144600,"DETROIT LAKE AT LOG BOOM BEHIND DETROIT DAM, OR",Willamette,44,2022-10-29,2024-09-24,2021-2024,Overlapping_Era_2 (Mutually Co-Active 2021-2024)

@@ -1,0 +1,4 @@
+target,n_samples,n_basins,n_sites,top_site_id,top_site_pct,top_3_sites_pct,dominant_basin,dominant_basin_pct
+turbidity,37655,5,51,294643095035200,18.07,39.37,Trinity,32.85
+chlorophyll,10291,5,27,5586300,16.39,42.1,Illinois,32.67
+cdom,3251,3,6,1467200,44.23,85.05,Delaware,44.23

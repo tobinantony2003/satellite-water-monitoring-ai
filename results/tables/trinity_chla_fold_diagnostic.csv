@@ -1,0 +1,2 @@
+fold,target,N_test,trinity_target_var,training_target_var,variance_ratio_test_vs_train,naive_train_mean_prediction,trinity_actual_mean,naive_mean_r2_raw,naive_mean_rmse_raw,mixedlm_model_r2_raw,mixedlm_model_rmse_raw
+Fold 2 (Trinity 294643095035200),Chlorophyll-a (ug/L),1560,3.782,495.9,0.0076,14.91,4.57,-28.2805,10.52,0.0366,1.91

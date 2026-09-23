@@ -1,0 +1,9 @@
+feature,n_samples_RawUnitMixed,raw_pearson_r_RawUnitMixed,site_ctrl_partial_r_RawUnitMixed,weighted_within_site_r_RawUnitMixed,pct_collapse_RawUnitMixed,n_samples_HarmonizedNative,raw_pearson_r_HarmonizedNative,site_ctrl_partial_r_HarmonizedNative,weighted_within_site_r_HarmonizedNative,pct_collapse_HarmonizedNative
+ndci,10291,0.2026,0.068,0.0883,66.4,6932,-0.1246,0.0938,0.1319,24.7
+b5_b4_ratio,10291,0.1686,0.0406,0.0839,75.9,6932,-0.0347,0.0482,0.1305,-38.8
+B05_center_refl,10291,0.1585,-0.0524,-0.0146,66.9,6932,0.0427,-0.1058,-0.1221,-148.0
+B07_center_refl,10291,0.1708,-0.0197,0.0271,88.5,6932,-0.0236,-0.0971,-0.1071,-311.5
+B8A_center_refl,10291,0.1739,-0.0122,0.0383,93.0,6932,-0.0366,-0.0834,-0.0933,-128.0
+B04_center_refl,10291,0.009,-0.0684,-0.0297,-662.8,6932,0.078,-0.1184,-0.1329,-51.7
+B03_center_refl,10291,0.0199,-0.044,-0.0051,-121.3,6932,0.0641,-0.0877,-0.0893,-36.8
+B02_center_refl,10291,-0.0344,-0.0293,0.0162,14.9,6932,0.0411,-0.0735,-0.088,-78.7

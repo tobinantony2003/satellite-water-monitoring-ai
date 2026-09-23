@@ -1,0 +1,5 @@
+target,dataset,icc,var_re_site,var_resid,overall_r2_raw,overall_rmse_raw,overall_mae_raw,overall_bias_raw,overall_r2_log,total_samples,n_sites
+CDOM,Raw_UnitMixed,0.8101,0.1657,0.0388,-0.4081,19.63,12.54,-10.2,-0.1953,3251,6
+CDOM,Harmonized_NativeOnly,0.9354,0.2057,0.0142,-0.4911,22.06,15.73,-11.62,-0.2454,2533,6
+Chlorophyll-a,Raw_UnitMixed,0.8031,0.3555,0.0871,-0.1128,19.22,8.72,-5.95,-0.0198,10291,27
+Chlorophyll-a,Harmonized_NativeOnly,0.8181,0.3292,0.0732,-0.1626,21.67,10.13,-7.75,-0.1142,6932,18

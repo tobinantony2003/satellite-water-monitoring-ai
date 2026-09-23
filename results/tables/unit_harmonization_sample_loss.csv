@@ -1,0 +1,244 @@
+dataset,target_type,site_no,station_nm,basin,parm_cd,parm_unit,n_before,n_primary_native,n_secondary_converted,n_secondary_total,n_excluded_primary,reason
+a_ground_truth,cdom,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,32295/32322,RFU/ug/l QSE,2379,1198,1181,2185,1181,Partial RFU converted via site calibration
+a_ground_truth,cdom,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,32295,ug/l QSE,647,647,0,647,0,100% Native Physical Units
+a_ground_truth,cdom,14210000,"CLACKAMAS RIVER AT ESTACADA, OR",Willamette,32295,ug/l QSE,1234,1234,0,1234,0,100% Native Physical Units
+a_ground_truth,cdom,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,32295,ug/l QSE,1990,1990,0,1990,0,100% Native Physical Units
+a_ground_truth,cdom,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,32295,ug/l QSE,546,546,0,546,0,100% Native Physical Units
+a_ground_truth,cdom,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,32295,ug/l QSE,83,83,0,83,0,100% Native Physical Units
+a_ground_truth,cdom,444306122144600,"DETROIT LAKE AT LOG BOOM BEHIND DETROIT DAM, OR",Willamette,32295,ug/l QSE,63,63,0,63,0,100% Native Physical Units
+a_ground_truth,chlorophyll,01427510,DELAWARE RIVER AT CALLICOON NY,Delaware,32315/32316,RFU/ug/l,2408,1205,1203,2231,1203,Partial RFU converted via site calibration
+a_ground_truth,chlorophyll,01463500,Delaware River at Trenton NJ,Delaware,32318,ug/l,1230,1230,0,1230,0,100% Native Physical Units
+a_ground_truth,chlorophyll,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,32315,RFU,1185,0,0,0,1185,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,05537980,"DES PLAINES RIVER AT ROUTE 53 AT JOLIET, IL",Illinois,32316,ug/l,2596,2596,0,2596,0,100% Native Physical Units
+a_ground_truth,chlorophyll,05538020,"DES PLAINES RIVER IN LOCK CHANNEL AT ROCKDALE, IL",Illinois,32316,ug/l,2829,2829,0,2829,0,100% Native Physical Units
+a_ground_truth,chlorophyll,05543010,"ILLINOIS RIVER AT SENECA, IL",Illinois,32316,ug/l,638,638,0,638,0,100% Native Physical Units
+a_ground_truth,chlorophyll,05545750,"FOX RIVER NEAR NEW MUNSTER, WI",Illinois,32315,RFU,1874,0,0,0,1874,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,05549500,"FOX RIVER NEAR MCHENRY, IL",Illinois,32316,ug/l,1620,1620,0,1620,0,100% Native Physical Units
+a_ground_truth,chlorophyll,05553700,"ILLINOIS RIVER AT STARVED ROCK, IL",Illinois,32316,ug/l,5273,5273,0,5273,0,100% Native Physical Units
+a_ground_truth,chlorophyll,05558300,"ILLINOIS RIVER AT HENRY, IL",Illinois,32316,ug/l,4113,4113,0,4113,0,100% Native Physical Units
+a_ground_truth,chlorophyll,05559900,"ILLINOIS RIVER ABOVE RTE 150 AT PEORIA, IL",Illinois,32316,ug/l,848,848,0,848,0,100% Native Physical Units
+a_ground_truth,chlorophyll,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,32316,ug/l,2485,2485,0,2485,0,100% Native Physical Units
+a_ground_truth,chlorophyll,14210000,"CLACKAMAS RIVER AT ESTACADA, OR",Willamette,32315/62361,RFU/ug/l,1208,897,0,897,311,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,32315/32316,RFU/ug/l,1891,1375,0,1375,516,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,62361,ug/l,507,507,0,507,0,100% Native Physical Units
+a_ground_truth,chlorophyll,14670261,Delaware River at Pennypack Woods PA,Delaware,32315,RFU,2399,0,0,0,2399,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,294643095035200,"Lynchburg Res nr CWA Canal Inflow nr Baytown, TX",Trinity,32316,ug/l,2002,2002,0,2002,0,100% Native Physical Units
+a_ground_truth,chlorophyll,295826095082200,"Lk Houston S Union Pacific RR Bridge nr Houston,TX",Trinity,32316,ug/l,1015,1015,0,1015,0,100% Native Physical Units
+a_ground_truth,chlorophyll,382847107120401,"BLUE MESA RES WEST OF DRY GULCH NEAR SAPINERO, CO",Upper Colorado,32315,RFU,8,0,0,0,8,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,382852107054801,BLUE MESA RESERVOIR IN IOLA BASIN NR GUNNISON CO,Upper Colorado,32315,RFU,15,0,0,0,15,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,400853105563701,"WILLOW CREEK RESERVOIR NEAR DAM NEAR GRANBY, CO",Upper Colorado,32315,RFU,241,0,0,0,241,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,401330074001201,Sunset Lake east of Heck St at Asbury Park NJ,Delaware,32315,RFU,519,0,0,0,519,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,401345074010601,Deal Lake at Sunset Ave at Asbury Park NJ,Delaware,32315,RFU,7,0,0,0,7,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,401347074003501,Deal lake at Railroad Bridge at Asbury Park NJ,Delaware,32315,RFU,230,0,0,0,230,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,401349074000601,Deal lake DS of Park Ave at Asbury Park NJ,Delaware,32315,RFU,419,0,0,0,419,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,401350073595201,Deal Lake at Flume House at Asbury Park NJ,Delaware,32315,RFU,339,0,0,0,339,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,401352074002701,Deal Lake 150 ft east of Main St at Interlaken NJ,Delaware,32315,RFU,16,0,0,0,16,RFU-only sensor with no USGS calibration reference
+a_ground_truth,chlorophyll,423784088133401,"Long Lake at BEN Dock at Long Lake, IL",Illinois,32316,ug/l,361,361,0,361,0,100% Native Physical Units
+a_ground_truth,chlorophyll,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,32316,ug/l,85,85,0,85,0,100% Native Physical Units
+a_ground_truth,chlorophyll,444306122144600,"DETROIT LAKE AT LOG BOOM BEHIND DETROIT DAM, OR",Willamette,32315/32316,RFU/ug/l,153,78,75,142,75,Partial RFU converted via site calibration
+a_ground_truth,chlorophyll,453027122400000,"WILLAMETTE RIVER BLW HOLGATE CHANNEL, PORTLAND, OR",Willamette,32315/32316,RFU/ug/l,268,133,135,249,135,Partial RFU converted via site calibration
+a_ground_truth,turbidity,01427207,DELAWARE RIVER AT LORDVILLE NY,Delaware,63680,FNU,1006,1006,0,1006,0,100% Native Physical Units
+a_ground_truth,turbidity,01438500,Delaware River at Montague NJ,Delaware,63680,FNU,355,355,0,355,0,100% Native Physical Units
+a_ground_truth,turbidity,01458500,Delaware River at Frenchtown NJ,Delaware,63680,FNU,738,738,0,738,0,100% Native Physical Units
+a_ground_truth,turbidity,01463500,Delaware River at Trenton NJ,Delaware,63680,FNU,1902,1902,0,1902,0,100% Native Physical Units
+a_ground_truth,turbidity,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,63680,FNU,1185,1185,0,1185,0,100% Native Physical Units
+a_ground_truth,turbidity,01473500,"Schuylkill River at Norristown, PA",Delaware,63680,FNU,2972,2972,0,2972,0,100% Native Physical Units
+a_ground_truth,turbidity,05537980,"DES PLAINES RIVER AT ROUTE 53 AT JOLIET, IL",Illinois,63680,FNU,5083,5083,0,5083,0,100% Native Physical Units
+a_ground_truth,turbidity,05538010,"DES PLAINES RIVER AT ROCKDALE, IL",Illinois,63680,FNU,59,59,0,59,0,100% Native Physical Units
+a_ground_truth,turbidity,05538020,"DES PLAINES RIVER IN LOCK CHANNEL AT ROCKDALE, IL",Illinois,63680,FNU,2841,2841,0,2841,0,100% Native Physical Units
+a_ground_truth,turbidity,05543010,"ILLINOIS RIVER AT SENECA, IL",Illinois,63680,FNU,681,681,0,681,0,100% Native Physical Units
+a_ground_truth,turbidity,05545750,"FOX RIVER NEAR NEW MUNSTER, WI",Illinois,63680,FNU,1760,1760,0,1760,0,100% Native Physical Units
+a_ground_truth,turbidity,05549500,"FOX RIVER NEAR MCHENRY, IL",Illinois,63680,FNU,1589,1589,0,1589,0,100% Native Physical Units
+a_ground_truth,turbidity,05553700,"ILLINOIS RIVER AT STARVED ROCK, IL",Illinois,63680,FNU,2516,2516,0,2516,0,100% Native Physical Units
+a_ground_truth,turbidity,05558300,"ILLINOIS RIVER AT HENRY, IL",Illinois,63680,FNU,1227,1227,0,1227,0,100% Native Physical Units
+a_ground_truth,turbidity,05559900,"ILLINOIS RIVER ABOVE RTE 150 AT PEORIA, IL",Illinois,63680,FNU,910,910,0,910,0,100% Native Physical Units
+a_ground_truth,turbidity,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,63680,FNU,4854,4854,0,4854,0,100% Native Physical Units
+a_ground_truth,turbidity,08062500,"Trinity Rv nr Rosser, TX",Trinity,63680,FNU,2741,2741,0,2741,0,100% Native Physical Units
+a_ground_truth,turbidity,08067000,"Trinity Rv at Liberty, TX",Trinity,63680,FNU,848,848,0,848,0,100% Native Physical Units
+a_ground_truth,turbidity,08067250,"Trinity Rv at IH 10 nr Wallisville, TX",Trinity,63680,FNU,134,134,0,134,0,100% Native Physical Units
+a_ground_truth,turbidity,09058000,"COLORADO RIVER NEAR KREMMLING, CO",Upper Colorado,63680,FNU,890,890,0,890,0,100% Native Physical Units
+a_ground_truth,turbidity,09060799,"COLORADO RIVER AT CATAMOUNT BRIDGE, CO",Upper Colorado,63680,FNU,3023,3023,0,3023,0,100% Native Physical Units
+a_ground_truth,turbidity,09070500,"COLORADO RIVER NEAR DOTSERO, CO",Upper Colorado,63680,FNU,4119,4119,0,4119,0,100% Native Physical Units
+a_ground_truth,turbidity,09071750,"COLORADO RIVER ABOVE GLENWOOD SPRINGS, CO",Upper Colorado,63680,FNU,5211,5211,0,5211,0,100% Native Physical Units
+a_ground_truth,turbidity,09088600,"COLORADO RIVER ABOVE DIVIDE CREEK NEAR SILT, CO",Upper Colorado,63680,FNU,6201,6201,0,6201,0,100% Native Physical Units
+a_ground_truth,turbidity,09092570,"COLORADO RIVER AT RULISON, CO.",Upper Colorado,63680,FNU,1122,1122,0,1122,0,100% Native Physical Units
+a_ground_truth,turbidity,09095500,"COLORADO RIVER NEAR CAMEO, CO.",Upper Colorado,63680,FNU,2936,2936,0,2936,0,100% Native Physical Units
+a_ground_truth,turbidity,09144250,"GUNNISON RIVER AT DELTA, CO",Upper Colorado,63680,FNU,4484,4484,0,4484,0,100% Native Physical Units
+a_ground_truth,turbidity,09152500,"GUNNISON RIVER NEAR GRAND JUNCTION, CO.",Upper Colorado,63680,FNU,2251,2251,0,2251,0,100% Native Physical Units
+a_ground_truth,turbidity,09163500,COLORADO RIVER NEAR COLORADO-UTAH STATE LINE,Upper Colorado,63680,FNU,2445,2445,0,2445,0,100% Native Physical Units
+a_ground_truth,turbidity,140928320,Westecunk Crk 3700 ft US of mouth nr West Creek NJ,Delaware,63680,FNU,60,60,0,60,0,100% Native Physical Units
+a_ground_truth,turbidity,14150000,"MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR",Willamette,63680,FNU,15,15,0,15,0,100% Native Physical Units
+a_ground_truth,turbidity,14152000,"MIDDLE FORK WILLAMETTE RIVER AT JASPER, OR",Willamette,63680,FNU,572,572,0,572,0,100% Native Physical Units
+a_ground_truth,turbidity,14158100,"WILLAMETTE RIVER AT OWOSSO BRIDGE AT EUGENE, OR",Willamette,63680,FNU,2202,2202,0,2202,0,100% Native Physical Units
+a_ground_truth,turbidity,14187500,"SOUTH SANTIAM RIVER AT WATERLOO, OR",Willamette,63680,FNU,983,983,0,983,0,100% Native Physical Units
+a_ground_truth,turbidity,14210000,"CLACKAMAS RIVER AT ESTACADA, OR",Willamette,63680,FNU,2869,2869,0,2869,0,100% Native Physical Units
+a_ground_truth,turbidity,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,63680,FNU,4272,4272,0,4272,0,100% Native Physical Units
+a_ground_truth,turbidity,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,63680,FNU,1936,1936,0,1936,0,100% Native Physical Units
+a_ground_truth,turbidity,14670261,Delaware River at Pennypack Woods PA,Delaware,63680,FNU,4870,4870,0,4870,0,100% Native Physical Units
+a_ground_truth,turbidity,294643095035200,"Lynchburg Res nr CWA Canal Inflow nr Baytown, TX",Trinity,63680,FNU,8508,8508,0,8508,0,100% Native Physical Units
+a_ground_truth,turbidity,295554095093402,"Lk Hou at Jack's Ditch (Site 2) nr Houston, TX",Trinity,63680,FNU,4067,4067,0,4067,0,100% Native Physical Units
+a_ground_truth,turbidity,295826095082200,"Lk Houston S Union Pacific RR Bridge nr Houston,TX",Trinity,63680,FNU,2916,2916,0,2916,0,100% Native Physical Units
+a_ground_truth,turbidity,300032095080501,"Lk Houston at FM 1960 nr Huffman, TX",Trinity,63680,FNU,2143,2143,0,2143,0,100% Native Physical Units
+a_ground_truth,turbidity,382847107120401,"BLUE MESA RES WEST OF DRY GULCH NEAR SAPINERO, CO",Upper Colorado,63680,FNU,9,9,0,9,0,100% Native Physical Units
+a_ground_truth,turbidity,382852107054801,BLUE MESA RESERVOIR IN IOLA BASIN NR GUNNISON CO,Upper Colorado,63680,FNU,12,12,0,12,0,100% Native Physical Units
+a_ground_truth,turbidity,395430106470301,"COLORADO RIVER BELOW ELK CREEK NEAR MCCOY, CO",Upper Colorado,63680,FNU,130,130,0,130,0,100% Native Physical Units
+a_ground_truth,turbidity,400853105563701,"WILLOW CREEK RESERVOIR NEAR DAM NEAR GRANBY, CO",Upper Colorado,63680,FNU,358,358,0,358,0,100% Native Physical Units
+a_ground_truth,turbidity,401330074001201,Sunset Lake east of Heck St at Asbury Park NJ,Delaware,63680,FNU,533,533,0,533,0,100% Native Physical Units
+a_ground_truth,turbidity,401345074010601,Deal Lake at Sunset Ave at Asbury Park NJ,Delaware,63680,FNU,6,6,0,6,0,100% Native Physical Units
+a_ground_truth,turbidity,401347074003501,Deal lake at Railroad Bridge at Asbury Park NJ,Delaware,63680,FNU,213,213,0,213,0,100% Native Physical Units
+a_ground_truth,turbidity,401349074000601,Deal lake DS of Park Ave at Asbury Park NJ,Delaware,63680,FNU,513,513,0,513,0,100% Native Physical Units
+a_ground_truth,turbidity,401350073595201,Deal Lake at Flume House at Asbury Park NJ,Delaware,63680,FNU,323,323,0,323,0,100% Native Physical Units
+a_ground_truth,turbidity,401352074002701,Deal Lake 150 ft east of Main St at Interlaken NJ,Delaware,63680,FNU,27,27,0,27,0,100% Native Physical Units
+a_ground_truth,turbidity,405610074382301,Lk Hopatcong 9600 ft NE of dam at Hopatcong NJ,Delaware,63680,FNU,66,66,0,66,0,100% Native Physical Units
+a_ground_truth,turbidity,423784088133401,"Long Lake at BEN Dock at Long Lake, IL",Illinois,63680,FNU,365,365,0,365,0,100% Native Physical Units
+a_ground_truth,turbidity,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,63680,FNU,69,69,0,69,0,100% Native Physical Units
+a_ground_truth,turbidity,442453122394900,"FOSTER LAKE BELOW GEDNEY CREEK, AT FOSTER, OR",Willamette,63680,FNU,73,73,0,73,0,100% Native Physical Units
+a_ground_truth,turbidity,444306122144600,"DETROIT LAKE AT LOG BOOM BEHIND DETROIT DAM, OR",Willamette,63680,FNU,83,83,0,83,0,100% Native Physical Units
+b_dl_masked,cdom,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,32295/32322,RFU/ug/l QSE,1438,720,718,1318,718,Partial RFU converted via site calibration
+b_dl_masked,cdom,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,32295,ug/l QSE,379,379,0,379,0,100% Native Physical Units
+b_dl_masked,cdom,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,32295,ug/l QSE,944,944,0,944,0,100% Native Physical Units
+b_dl_masked,cdom,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,32295,ug/l QSE,383,383,0,383,0,100% Native Physical Units
+b_dl_masked,cdom,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,32295,ug/l QSE,63,63,0,63,0,100% Native Physical Units
+b_dl_masked,cdom,444306122144600,"DETROIT LAKE AT LOG BOOM BEHIND DETROIT DAM, OR",Willamette,32295,ug/l QSE,44,44,0,44,0,100% Native Physical Units
+b_dl_masked,chlorophyll,01427510,DELAWARE RIVER AT CALLICOON NY,Delaware,32315/32316,RFU/ug/l,511,265,246,473,246,Partial RFU converted via site calibration
+b_dl_masked,chlorophyll,01463500,Delaware River at Trenton NJ,Delaware,32318,ug/l,20,20,0,20,0,100% Native Physical Units
+b_dl_masked,chlorophyll,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,32315,RFU,757,0,0,0,757,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,05537980,"DES PLAINES RIVER AT ROUTE 53 AT JOLIET, IL",Illinois,32316,ug/l,45,45,0,45,0,100% Native Physical Units
+b_dl_masked,chlorophyll,05538020,"DES PLAINES RIVER IN LOCK CHANNEL AT ROCKDALE, IL",Illinois,32316,ug/l,248,248,0,248,0,100% Native Physical Units
+b_dl_masked,chlorophyll,05543010,"ILLINOIS RIVER AT SENECA, IL",Illinois,32316,ug/l,246,246,0,246,0,100% Native Physical Units
+b_dl_masked,chlorophyll,05545750,"FOX RIVER NEAR NEW MUNSTER, WI",Illinois,32315,RFU,9,0,0,0,9,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,05549500,"FOX RIVER NEAR MCHENRY, IL",Illinois,32316,ug/l,211,211,0,211,0,100% Native Physical Units
+b_dl_masked,chlorophyll,05553700,"ILLINOIS RIVER AT STARVED ROCK, IL",Illinois,32316,ug/l,406,406,0,406,0,100% Native Physical Units
+b_dl_masked,chlorophyll,05558300,"ILLINOIS RIVER AT HENRY, IL",Illinois,32316,ug/l,118,118,0,118,0,100% Native Physical Units
+b_dl_masked,chlorophyll,05559900,"ILLINOIS RIVER ABOVE RTE 150 AT PEORIA, IL",Illinois,32316,ug/l,31,31,0,31,0,100% Native Physical Units
+b_dl_masked,chlorophyll,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,32316,ug/l,1687,1687,0,1687,0,100% Native Physical Units
+b_dl_masked,chlorophyll,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,32315/32316,RFU/ug/l,932,696,0,696,236,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,62361,ug/l,368,368,0,368,0,100% Native Physical Units
+b_dl_masked,chlorophyll,14670261,Delaware River at Pennypack Woods PA,Delaware,32315,RFU,1086,0,0,0,1086,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,294643095035200,"Lynchburg Res nr CWA Canal Inflow nr Baytown, TX",Trinity,32316,ug/l,1560,1560,0,1560,0,100% Native Physical Units
+b_dl_masked,chlorophyll,295826095082200,"Lk Houston S Union Pacific RR Bridge nr Houston,TX",Trinity,32316,ug/l,448,448,0,448,0,100% Native Physical Units
+b_dl_masked,chlorophyll,400853105563701,"WILLOW CREEK RESERVOIR NEAR DAM NEAR GRANBY, CO",Upper Colorado,32315,RFU,68,0,0,0,68,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,401330074001201,Sunset Lake east of Heck St at Asbury Park NJ,Delaware,32315,RFU,472,0,0,0,472,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,401345074010601,Deal Lake at Sunset Ave at Asbury Park NJ,Delaware,32315,RFU,7,0,0,0,7,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,401347074003501,Deal lake at Railroad Bridge at Asbury Park NJ,Delaware,32315,RFU,230,0,0,0,230,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,401350073595201,Deal Lake at Flume House at Asbury Park NJ,Delaware,32315,RFU,73,0,0,0,73,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,401352074002701,Deal Lake 150 ft east of Main St at Interlaken NJ,Delaware,32315,RFU,16,0,0,0,16,RFU-only sensor with no USGS calibration reference
+b_dl_masked,chlorophyll,423784088133401,"Long Lake at BEN Dock at Long Lake, IL",Illinois,32316,ug/l,361,361,0,361,0,100% Native Physical Units
+b_dl_masked,chlorophyll,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,32316,ug/l,61,61,0,61,0,100% Native Physical Units
+b_dl_masked,chlorophyll,444306122144600,"DETROIT LAKE AT LOG BOOM BEHIND DETROIT DAM, OR",Willamette,32315/32316,RFU/ug/l,112,59,53,102,53,Partial RFU converted via site calibration
+b_dl_masked,chlorophyll,453027122400000,"WILLAMETTE RIVER BLW HOLGATE CHANNEL, PORTLAND, OR",Willamette,32315/32316,RFU/ug/l,208,102,106,195,106,Partial RFU converted via site calibration
+b_dl_masked,turbidity,01427207,DELAWARE RIVER AT LORDVILLE NY,Delaware,63680,FNU,252,252,0,252,0,100% Native Physical Units
+b_dl_masked,turbidity,01438500,Delaware River at Montague NJ,Delaware,63680,FNU,73,73,0,73,0,100% Native Physical Units
+b_dl_masked,turbidity,01458500,Delaware River at Frenchtown NJ,Delaware,63680,FNU,273,273,0,273,0,100% Native Physical Units
+b_dl_masked,turbidity,01463500,Delaware River at Trenton NJ,Delaware,63680,FNU,41,41,0,41,0,100% Native Physical Units
+b_dl_masked,turbidity,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,63680,FNU,711,711,0,711,0,100% Native Physical Units
+b_dl_masked,turbidity,01473500,"Schuylkill River at Norristown, PA",Delaware,63680,FNU,1633,1633,0,1633,0,100% Native Physical Units
+b_dl_masked,turbidity,05537980,"DES PLAINES RIVER AT ROUTE 53 AT JOLIET, IL",Illinois,63680,FNU,88,88,0,88,0,100% Native Physical Units
+b_dl_masked,turbidity,05538010,"DES PLAINES RIVER AT ROCKDALE, IL",Illinois,63680,FNU,15,15,0,15,0,100% Native Physical Units
+b_dl_masked,turbidity,05538020,"DES PLAINES RIVER IN LOCK CHANNEL AT ROCKDALE, IL",Illinois,63680,FNU,285,285,0,285,0,100% Native Physical Units
+b_dl_masked,turbidity,05543010,"ILLINOIS RIVER AT SENECA, IL",Illinois,63680,FNU,255,255,0,255,0,100% Native Physical Units
+b_dl_masked,turbidity,05545750,"FOX RIVER NEAR NEW MUNSTER, WI",Illinois,63680,FNU,6,6,0,6,0,100% Native Physical Units
+b_dl_masked,turbidity,05549500,"FOX RIVER NEAR MCHENRY, IL",Illinois,63680,FNU,196,196,0,196,0,100% Native Physical Units
+b_dl_masked,turbidity,05553700,"ILLINOIS RIVER AT STARVED ROCK, IL",Illinois,63680,FNU,104,104,0,104,0,100% Native Physical Units
+b_dl_masked,turbidity,05558300,"ILLINOIS RIVER AT HENRY, IL",Illinois,63680,FNU,11,11,0,11,0,100% Native Physical Units
+b_dl_masked,turbidity,05559900,"ILLINOIS RIVER ABOVE RTE 150 AT PEORIA, IL",Illinois,63680,FNU,33,33,0,33,0,100% Native Physical Units
+b_dl_masked,turbidity,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,63680,FNU,3335,3335,0,3335,0,100% Native Physical Units
+b_dl_masked,turbidity,08062500,"Trinity Rv nr Rosser, TX",Trinity,63680,FNU,369,369,0,369,0,100% Native Physical Units
+b_dl_masked,turbidity,08067000,"Trinity Rv at Liberty, TX",Trinity,63680,FNU,51,51,0,51,0,100% Native Physical Units
+b_dl_masked,turbidity,08067250,"Trinity Rv at IH 10 nr Wallisville, TX",Trinity,63680,FNU,53,53,0,53,0,100% Native Physical Units
+b_dl_masked,turbidity,09058000,"COLORADO RIVER NEAR KREMMLING, CO",Upper Colorado,63680,FNU,603,603,0,603,0,100% Native Physical Units
+b_dl_masked,turbidity,09060799,"COLORADO RIVER AT CATAMOUNT BRIDGE, CO",Upper Colorado,63680,FNU,204,204,0,204,0,100% Native Physical Units
+b_dl_masked,turbidity,09070500,"COLORADO RIVER NEAR DOTSERO, CO",Upper Colorado,63680,FNU,1956,1956,0,1956,0,100% Native Physical Units
+b_dl_masked,turbidity,09071750,"COLORADO RIVER ABOVE GLENWOOD SPRINGS, CO",Upper Colorado,63680,FNU,17,17,0,17,0,100% Native Physical Units
+b_dl_masked,turbidity,09088600,"COLORADO RIVER ABOVE DIVIDE CREEK NEAR SILT, CO",Upper Colorado,63680,FNU,4684,4684,0,4684,0,100% Native Physical Units
+b_dl_masked,turbidity,09092570,"COLORADO RIVER AT RULISON, CO.",Upper Colorado,63680,FNU,520,520,0,520,0,100% Native Physical Units
+b_dl_masked,turbidity,09095500,"COLORADO RIVER NEAR CAMEO, CO.",Upper Colorado,63680,FNU,11,11,0,11,0,100% Native Physical Units
+b_dl_masked,turbidity,09144250,"GUNNISON RIVER AT DELTA, CO",Upper Colorado,63680,FNU,1485,1485,0,1485,0,100% Native Physical Units
+b_dl_masked,turbidity,09152500,"GUNNISON RIVER NEAR GRAND JUNCTION, CO.",Upper Colorado,63680,FNU,49,49,0,49,0,100% Native Physical Units
+b_dl_masked,turbidity,14150000,"MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR",Willamette,63680,FNU,15,15,0,15,0,100% Native Physical Units
+b_dl_masked,turbidity,14152000,"MIDDLE FORK WILLAMETTE RIVER AT JASPER, OR",Willamette,63680,FNU,298,298,0,298,0,100% Native Physical Units
+b_dl_masked,turbidity,14158100,"WILLAMETTE RIVER AT OWOSSO BRIDGE AT EUGENE, OR",Willamette,63680,FNU,882,882,0,882,0,100% Native Physical Units
+b_dl_masked,turbidity,14210000,"CLACKAMAS RIVER AT ESTACADA, OR",Willamette,63680,FNU,42,42,0,42,0,100% Native Physical Units
+b_dl_masked,turbidity,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,63680,FNU,2540,2540,0,2540,0,100% Native Physical Units
+b_dl_masked,turbidity,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,63680,FNU,1332,1332,0,1332,0,100% Native Physical Units
+b_dl_masked,turbidity,14670261,Delaware River at Pennypack Woods PA,Delaware,63680,FNU,1804,1804,0,1804,0,100% Native Physical Units
+b_dl_masked,turbidity,294643095035200,"Lynchburg Res nr CWA Canal Inflow nr Baytown, TX",Trinity,63680,FNU,6804,6804,0,6804,0,100% Native Physical Units
+b_dl_masked,turbidity,295554095093402,"Lk Hou at Jack's Ditch (Site 2) nr Houston, TX",Trinity,63680,FNU,2479,2479,0,2479,0,100% Native Physical Units
+b_dl_masked,turbidity,295826095082200,"Lk Houston S Union Pacific RR Bridge nr Houston,TX",Trinity,63680,FNU,1523,1523,0,1523,0,100% Native Physical Units
+b_dl_masked,turbidity,300032095080501,"Lk Houston at FM 1960 nr Huffman, TX",Trinity,63680,FNU,1091,1091,0,1091,0,100% Native Physical Units
+b_dl_masked,turbidity,400853105563701,"WILLOW CREEK RESERVOIR NEAR DAM NEAR GRANBY, CO",Upper Colorado,63680,FNU,89,89,0,89,0,100% Native Physical Units
+b_dl_masked,turbidity,401330074001201,Sunset Lake east of Heck St at Asbury Park NJ,Delaware,63680,FNU,494,494,0,494,0,100% Native Physical Units
+b_dl_masked,turbidity,401345074010601,Deal Lake at Sunset Ave at Asbury Park NJ,Delaware,63680,FNU,6,6,0,6,0,100% Native Physical Units
+b_dl_masked,turbidity,401347074003501,Deal lake at Railroad Bridge at Asbury Park NJ,Delaware,63680,FNU,213,213,0,213,0,100% Native Physical Units
+b_dl_masked,turbidity,401349074000601,Deal lake DS of Park Ave at Asbury Park NJ,Delaware,63680,FNU,43,43,0,43,0,100% Native Physical Units
+b_dl_masked,turbidity,401350073595201,Deal Lake at Flume House at Asbury Park NJ,Delaware,63680,FNU,78,78,0,78,0,100% Native Physical Units
+b_dl_masked,turbidity,401352074002701,Deal Lake 150 ft east of Main St at Interlaken NJ,Delaware,63680,FNU,27,27,0,27,0,100% Native Physical Units
+b_dl_masked,turbidity,405610074382301,Lk Hopatcong 9600 ft NE of dam at Hopatcong NJ,Delaware,63680,FNU,54,54,0,54,0,100% Native Physical Units
+b_dl_masked,turbidity,423784088133401,"Long Lake at BEN Dock at Long Lake, IL",Illinois,63680,FNU,365,365,0,365,0,100% Native Physical Units
+b_dl_masked,turbidity,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,63680,FNU,55,55,0,55,0,100% Native Physical Units
+b_dl_masked,turbidity,442453122394900,"FOSTER LAKE BELOW GEDNEY CREEK, AT FOSTER, OR",Willamette,63680,FNU,46,46,0,46,0,100% Native Physical Units
+b_dl_masked,turbidity,444306122144600,"DETROIT LAKE AT LOG BOOM BEHIND DETROIT DAM, OR",Willamette,63680,FNU,62,62,0,62,0,100% Native Physical Units
+c_ndwi_masked,cdom,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,32295/32322,RFU/ug/l QSE,1255,628,627,1158,627,Partial RFU converted via site calibration
+c_ndwi_masked,cdom,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,32295,ug/l QSE,123,123,0,123,0,100% Native Physical Units
+c_ndwi_masked,cdom,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,32295,ug/l QSE,16,16,0,16,0,100% Native Physical Units
+c_ndwi_masked,cdom,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,32295,ug/l QSE,321,321,0,321,0,100% Native Physical Units
+c_ndwi_masked,cdom,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,32295,ug/l QSE,10,10,0,10,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,01427510,DELAWARE RIVER AT CALLICOON NY,Delaware,32315/32316,RFU/ug/l,62,38,24,58,24,Partial RFU converted via site calibration
+c_ndwi_masked,chlorophyll,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,32315,RFU,675,0,0,0,675,RFU-only sensor with no USGS calibration reference
+c_ndwi_masked,chlorophyll,05537980,"DES PLAINES RIVER AT ROUTE 53 AT JOLIET, IL",Illinois,32316,ug/l,11,11,0,11,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,05538020,"DES PLAINES RIVER IN LOCK CHANNEL AT ROCKDALE, IL",Illinois,32316,ug/l,39,39,0,39,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,05543010,"ILLINOIS RIVER AT SENECA, IL",Illinois,32316,ug/l,141,141,0,141,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,05545750,"FOX RIVER NEAR NEW MUNSTER, WI",Illinois,32315,RFU,30,0,0,0,30,RFU-only sensor with no USGS calibration reference
+c_ndwi_masked,chlorophyll,05553700,"ILLINOIS RIVER AT STARVED ROCK, IL",Illinois,32316,ug/l,237,237,0,237,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,05558300,"ILLINOIS RIVER AT HENRY, IL",Illinois,32316,ug/l,49,49,0,49,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,32316,ug/l,262,262,0,262,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,32316,ug/l,15,15,0,15,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,62361,ug/l,324,324,0,324,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,294643095035200,"Lynchburg Res nr CWA Canal Inflow nr Baytown, TX",Trinity,32316,ug/l,1656,1656,0,1656,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,295826095082200,"Lk Houston S Union Pacific RR Bridge nr Houston,TX",Trinity,32316,ug/l,599,599,0,599,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,400853105563701,"WILLOW CREEK RESERVOIR NEAR DAM NEAR GRANBY, CO",Upper Colorado,32315,RFU,10,0,0,0,10,RFU-only sensor with no USGS calibration reference
+c_ndwi_masked,chlorophyll,401330074001201,Sunset Lake east of Heck St at Asbury Park NJ,Delaware,32315,RFU,55,0,0,0,55,RFU-only sensor with no USGS calibration reference
+c_ndwi_masked,chlorophyll,401345074010601,Deal Lake at Sunset Ave at Asbury Park NJ,Delaware,32315,RFU,7,0,0,0,7,RFU-only sensor with no USGS calibration reference
+c_ndwi_masked,chlorophyll,401350073595201,Deal Lake at Flume House at Asbury Park NJ,Delaware,32315,RFU,73,0,0,0,73,RFU-only sensor with no USGS calibration reference
+c_ndwi_masked,chlorophyll,423784088133401,"Long Lake at BEN Dock at Long Lake, IL",Illinois,32316,ug/l,5,5,0,5,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,32316,ug/l,10,10,0,10,0,100% Native Physical Units
+c_ndwi_masked,chlorophyll,453027122400000,"WILLAMETTE RIVER BLW HOLGATE CHANNEL, PORTLAND, OR",Willamette,32315/32316,RFU/ug/l,89,40,49,84,49,Partial RFU converted via site calibration
+c_ndwi_masked,turbidity,01438500,Delaware River at Montague NJ,Delaware,63680,FNU,10,10,0,10,0,100% Native Physical Units
+c_ndwi_masked,turbidity,01458500,Delaware River at Frenchtown NJ,Delaware,63680,FNU,31,31,0,31,0,100% Native Physical Units
+c_ndwi_masked,turbidity,01463500,Delaware River at Trenton NJ,Delaware,63680,FNU,14,14,0,14,0,100% Native Physical Units
+c_ndwi_masked,turbidity,01467200,"Delaware River at Penn's Landing, Philadelphia, PA",Delaware,63680,FNU,659,659,0,659,0,100% Native Physical Units
+c_ndwi_masked,turbidity,01473500,"Schuylkill River at Norristown, PA",Delaware,63680,FNU,113,113,0,113,0,100% Native Physical Units
+c_ndwi_masked,turbidity,05537980,"DES PLAINES RIVER AT ROUTE 53 AT JOLIET, IL",Illinois,63680,FNU,24,24,0,24,0,100% Native Physical Units
+c_ndwi_masked,turbidity,05538020,"DES PLAINES RIVER IN LOCK CHANNEL AT ROCKDALE, IL",Illinois,63680,FNU,54,54,0,54,0,100% Native Physical Units
+c_ndwi_masked,turbidity,05543010,"ILLINOIS RIVER AT SENECA, IL",Illinois,63680,FNU,152,152,0,152,0,100% Native Physical Units
+c_ndwi_masked,turbidity,05545750,"FOX RIVER NEAR NEW MUNSTER, WI",Illinois,63680,FNU,34,34,0,34,0,100% Native Physical Units
+c_ndwi_masked,turbidity,05553700,"ILLINOIS RIVER AT STARVED ROCK, IL",Illinois,63680,FNU,76,76,0,76,0,100% Native Physical Units
+c_ndwi_masked,turbidity,05558300,"ILLINOIS RIVER AT HENRY, IL",Illinois,63680,FNU,26,26,0,26,0,100% Native Physical Units
+c_ndwi_masked,turbidity,05586300,"ILLINOIS RIVER AT FLORENCE, IL",Illinois,63680,FNU,534,534,0,534,0,100% Native Physical Units
+c_ndwi_masked,turbidity,08067250,"Trinity Rv at IH 10 nr Wallisville, TX",Trinity,63680,FNU,43,43,0,43,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09058000,"COLORADO RIVER NEAR KREMMLING, CO",Upper Colorado,63680,FNU,181,181,0,181,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09060799,"COLORADO RIVER AT CATAMOUNT BRIDGE, CO",Upper Colorado,63680,FNU,33,33,0,33,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09070500,"COLORADO RIVER NEAR DOTSERO, CO",Upper Colorado,63680,FNU,366,366,0,366,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09071750,"COLORADO RIVER ABOVE GLENWOOD SPRINGS, CO",Upper Colorado,63680,FNU,112,112,0,112,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09088600,"COLORADO RIVER ABOVE DIVIDE CREEK NEAR SILT, CO",Upper Colorado,63680,FNU,2664,2664,0,2664,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09092570,"COLORADO RIVER AT RULISON, CO.",Upper Colorado,63680,FNU,333,333,0,333,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09095500,"COLORADO RIVER NEAR CAMEO, CO.",Upper Colorado,63680,FNU,42,42,0,42,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09144250,"GUNNISON RIVER AT DELTA, CO",Upper Colorado,63680,FNU,176,176,0,176,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09152500,"GUNNISON RIVER NEAR GRAND JUNCTION, CO.",Upper Colorado,63680,FNU,17,17,0,17,0,100% Native Physical Units
+c_ndwi_masked,turbidity,09163500,COLORADO RIVER NEAR COLORADO-UTAH STATE LINE,Upper Colorado,63680,FNU,11,11,0,11,0,100% Native Physical Units
+c_ndwi_masked,turbidity,14158100,"WILLAMETTE RIVER AT OWOSSO BRIDGE AT EUGENE, OR",Willamette,63680,FNU,76,76,0,76,0,100% Native Physical Units
+c_ndwi_masked,turbidity,14187500,"SOUTH SANTIAM RIVER AT WATERLOO, OR",Willamette,63680,FNU,14,14,0,14,0,100% Native Physical Units
+c_ndwi_masked,turbidity,14210000,"CLACKAMAS RIVER AT ESTACADA, OR",Willamette,63680,FNU,28,28,0,28,0,100% Native Physical Units
+c_ndwi_masked,turbidity,14211010,"CLACKAMAS RIVER NEAR OREGON CITY, OR",Willamette,63680,FNU,131,131,0,131,0,100% Native Physical Units
+c_ndwi_masked,turbidity,14211720,"WILLAMETTE RIVER AT PORTLAND, OR",Willamette,63680,FNU,956,956,0,956,0,100% Native Physical Units
+c_ndwi_masked,turbidity,14670261,Delaware River at Pennypack Woods PA,Delaware,63680,FNU,59,59,0,59,0,100% Native Physical Units
+c_ndwi_masked,turbidity,294643095035200,"Lynchburg Res nr CWA Canal Inflow nr Baytown, TX",Trinity,63680,FNU,7049,7049,0,7049,0,100% Native Physical Units
+c_ndwi_masked,turbidity,295554095093402,"Lk Hou at Jack's Ditch (Site 2) nr Houston, TX",Trinity,63680,FNU,2761,2761,0,2761,0,100% Native Physical Units
+c_ndwi_masked,turbidity,295826095082200,"Lk Houston S Union Pacific RR Bridge nr Houston,TX",Trinity,63680,FNU,1681,1681,0,1681,0,100% Native Physical Units
+c_ndwi_masked,turbidity,300032095080501,"Lk Houston at FM 1960 nr Huffman, TX",Trinity,63680,FNU,1232,1232,0,1232,0,100% Native Physical Units
+c_ndwi_masked,turbidity,400853105563701,"WILLOW CREEK RESERVOIR NEAR DAM NEAR GRANBY, CO",Upper Colorado,63680,FNU,22,22,0,22,0,100% Native Physical Units
+c_ndwi_masked,turbidity,401330074001201,Sunset Lake east of Heck St at Asbury Park NJ,Delaware,63680,FNU,49,49,0,49,0,100% Native Physical Units
+c_ndwi_masked,turbidity,401345074010601,Deal Lake at Sunset Ave at Asbury Park NJ,Delaware,63680,FNU,6,6,0,6,0,100% Native Physical Units
+c_ndwi_masked,turbidity,401350073595201,Deal Lake at Flume House at Asbury Park NJ,Delaware,63680,FNU,78,78,0,78,0,100% Native Physical Units
+c_ndwi_masked,turbidity,423784088133401,"Long Lake at BEN Dock at Long Lake, IL",Illinois,63680,FNU,7,7,0,7,0,100% Native Physical Units
+c_ndwi_masked,turbidity,441022122193200,"BLUE RIVER LAKE NEAR BLUE RIVER, OR (WQM)",Willamette,63680,FNU,7,7,0,7,0,100% Native Physical Units

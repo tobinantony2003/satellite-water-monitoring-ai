@@ -1,0 +1,8 @@
+feature,raw_pearson_r,site_ctrl_partial_r,unweighted_within_site_r,weighted_within_site_r,n_valid_sites,total_samples_represented
+ndwi,0.5991,0.1685,0.2321,0.1692,6,3251
+mndwi,0.4306,0.1732,0.242,0.1529,6,3251
+B04_center_refl,0.3468,0.1422,-0.022,0.0795,6,3251
+cdom_ratio,0.0415,-0.1062,-0.0262,-0.0713,6,3251
+B8A_center_refl,-0.4224,0.0123,-0.105,-0.0363,6,3251
+B03_center_refl,0.2771,0.1597,0.0008,0.1118,6,3251
+B02_center_refl,0.2336,0.1312,-0.01,0.1014,6,3251

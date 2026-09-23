@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and checkpoints
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Large datasets (ignore contents but keep directory structure)
+data/**
+!data/
+!data/raw/
+!data/raw/.gitkeep
+!data/processed/
+!data/processed/.gitkeep
+
+# macOS and OS metadata
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Environment / local logs
+.env
+*.log

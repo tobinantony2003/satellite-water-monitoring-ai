@@ -1,0 +1,4 @@
+model,r2_raw,rmse_raw,bias_raw,evaluation
+Stage 3 Random Forest,-0.1982,18.11,-4.82,5-Fold Spatial CV
+Stage 3 Deep Spectral MLP,-0.1518,17.75,-6.45,5-Fold Spatial CV
+Linear Mixed-Effects (MixedLM Fixed-Only),-0.4081,19.63,-10.2,5-Fold Spatial CV
