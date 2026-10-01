@@ -1,0 +1,5 @@
+condition,train_n,test_n,r2_physical,rmse_physical,r2_log,rmse_log
+Condition (a) Assumed Water (Full),80873,7152,0.3084,23.503,0.2527,0.4259
+Condition (b) DL Masked (Full Pool),30503,7152,0.2904,23.807,0.2661,0.4221
+"Condition (b) DL Masked (Subsampled N=15,447, 5 seeds)",15447,7152,0.2808 +/- 0.0278,23.963 +/- 0.465,0.2240 +/- 0.0208,0.4340 +/- 0.0058
+Condition (c) Naive NDWI Masked (Full Pool),15447,7152,0.2047,25.203,0.2489,0.4270

@@ -1,0 +1,4 @@
+target,best_model,macro_log_r2,pooled_log_r2,icc,sample_size,number_of_sites,masking_ablation_pvalue
+Turbidity,Gradient_Boosting,0.2166,0.3017,0.2889,37655,51,0.625
+Chlorophyll-a,Empirical_Baseline (NDCI),-2.5708,-0.2982,0.8181,6932,18,0.1875
+CDOM,Deep_Spectral_MLP,-14.4524,-0.1824,0.9354,2533,6,N/A

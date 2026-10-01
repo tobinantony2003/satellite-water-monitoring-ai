@@ -1,15 +1,26 @@
-
 import os
+import sys
+from pathlib import Path
+
+# Suppress joblib loky wmic CPU detection warning on modern Windows 11
+if 'LOKY_MAX_CPU_COUNT' not in os.environ:
+    os.environ['LOKY_MAX_CPU_COUNT'] = str(os.cpu_count() or 4)
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 import numpy as np
 import pandas as pd
 from scipy import stats
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from typing import Dict, Tuple, Any
 
 from src.inversion.models import get_inversion_models
-from src.inversion.spatial_cv import get_spatial_block_cv
 from src.inversion.metrics import compute_regression_metrics
 from src.inversion.train_inversion import FEATURE_COLS
+from src.evaluation.splits import get_test_sites
 
 def run_experiment_a_ablation(
     df_a: pd.DataFrame,
@@ -28,10 +39,16 @@ def run_experiment_a_ablation(
       
     Performs paired statistical significance tests (Paired t-test and Wilcoxon signed-rank)
     on the test error distributions across the conditions.
+
+    NOTE ON CHLOROPHYLL-A:
+      This evaluation is strictly a single-split front-end masking ablation designed to isolate
+      pixel extraction purity across masking conditions. For zero-shot cross-gauge portability
+      and site random-intercept confounding (ICC=0.82, 5-fold spatial CV R^2=-0.16), refer to
+      the validated mixed-effects analysis in results/tables/mixed_effects_3way_comparison.csv.
     """
-    print(f"\n=======================================================", flush=True)
+    print("\n=======================================================", flush=True)
     print(f"EXPERIMENT A: Segmentation-Quality Ablation for {target_type.upper()}", flush=True)
-    print(f"=======================================================", flush=True)
+    print("=======================================================", flush=True)
     
     datasets = {
         'Condition_(a)_Assumed_Water': df_a[df_a['target_type'] == target_type].copy(),
@@ -41,10 +58,7 @@ def run_experiment_a_ablation(
     
     # We evaluate on an identical held-out spatial test block from the overlapping confident set
     # to guarantee rigorous, fair apples-to-apples metric comparison across all 3 models!
-    common_sites = set(datasets['Condition_(b)_DL_Masked']['site_no']).intersection(
-        set(datasets['Condition_(c)_NDWI_Masked']['site_no'])
-    )
-    test_sites = set(list(common_sites)[: max(1, len(common_sites) // 4)])
+    test_sites = get_test_sites(target_type)
     
     results = []
     error_distributions = {}
@@ -53,8 +67,6 @@ def run_experiment_a_ablation(
         print(f"\nTraining under {cond_name} (Total pool: {len(df_cond):,} samples)...", flush=True)
         
         train_mask = ~df_cond['site_no'].isin(test_sites)
-        test_mask = df_cond['site_no'].isin(test_sites)
-        
         train_df = df_cond[train_mask]
         # Held-out test set is evaluated on the standard test sites
         test_df = datasets['Condition_(b)_DL_Masked'][datasets['Condition_(b)_DL_Masked']['site_no'].isin(test_sites)]
@@ -75,19 +87,29 @@ def run_experiment_a_ablation(
         pred_log = model.predict(X_test_scaled)
         pred_raw = 10.0 ** pred_log
         
+        # Physical space metrics
         metrics = compute_regression_metrics(y_test_raw, pred_raw)
         metrics['condition'] = cond_name
         metrics['train_samples'] = len(train_df)
         metrics['test_samples'] = len(test_df)
         metrics['model'] = model_name
+        metrics['r2_physical'] = metrics['r2']
+        metrics['rmse_physical'] = metrics['rmse']
+        metrics['mae_physical'] = metrics['mae']
+
+        # Log10 space metrics (standardized primary space)
+        y_test_log = np.log10(np.clip(y_test_raw, 1e-4, None))
+        metrics['r2_log'] = float(r2_score(y_test_log, pred_log))
+        metrics['rmse_log'] = float(np.sqrt(mean_squared_error(y_test_log, pred_log)))
+        metrics['mae_log'] = float(mean_absolute_error(y_test_log, pred_log))
         results.append(metrics)
         
         # Absolute errors for statistical significance testing
         abs_errors = np.abs(pred_raw - y_test_raw)
         error_distributions[cond_name] = abs_errors
         
-        print(f"  {cond_name} -> R^2: {metrics['r2']:.4f} | RMSE: {metrics['rmse']:.3f} | "
-              f"MAE: {metrics['mae']:.3f} | MAPE: {metrics['mape']:.2f}%", flush=True)
+        print(f"  {cond_name} -> Physical R^2: {metrics['r2_physical']:.4f} (RMSE: {metrics['rmse_physical']:.3f}) | "
+              f"Log R^2: {metrics['r2_log']:.4f} (RMSE: {metrics['rmse_log']:.4f})", flush=True)
               
     ablation_df = pd.DataFrame(results)
     
@@ -100,44 +122,63 @@ def run_experiment_a_ablation(
     t_stat_ba, p_val_ba = stats.ttest_rel(err_b, err_a)
     t_stat_bc, p_val_bc = stats.ttest_rel(err_b, err_c)
     
-    # Wilcoxon signed-rank tests (non-parametric)
-    wilcox_ba = stats.wilcoxon(err_b, err_a)
-    wilcox_bc = stats.wilcoxon(err_b, err_c)
+    # Wilcoxon signed-rank tests (non-parametric, safe against zero diffs)
+    try:
+        wilcox_ba = stats.wilcoxon(err_b, err_a, zero_method='wilcox')
+        w_stat_ba, p_w_ba = float(wilcox_ba.statistic), float(wilcox_ba.pvalue)
+    except Exception:
+        w_stat_ba, p_w_ba = float('nan'), float('nan')
+
+    try:
+        wilcox_bc = stats.wilcoxon(err_b, err_c, zero_method='wilcox')
+        w_stat_bc, p_w_bc = float(wilcox_bc.statistic), float(wilcox_bc.pvalue)
+    except Exception:
+        w_stat_bc, p_w_bc = float('nan'), float('nan')
     
     sig_summary = {
         'comparison_DL_vs_Assumed': {
             't_stat': float(t_stat_ba),
             'p_value_t': float(p_val_ba),
-            'wilcoxon_stat': float(wilcox_ba.statistic),
-            'p_value_wilcoxon': float(wilcox_ba.pvalue),
+            'wilcoxon_stat': w_stat_ba,
+            'p_value_wilcoxon': p_w_ba,
             'significant_at_0.05': bool(p_val_ba < 0.05)
         },
         'comparison_DL_vs_NDWI': {
             't_stat': float(t_stat_bc),
             'p_value_t': float(p_val_bc),
-            'wilcoxon_stat': float(wilcox_bc.statistic),
-            'p_value_wilcoxon': float(wilcox_bc.pvalue),
+            'wilcoxon_stat': w_stat_bc,
+            'p_value_wilcoxon': p_w_bc,
             'significant_at_0.05': bool(p_val_bc < 0.05)
         }
     }
     
     print("\n--- Statistical Significance Testing (Error Distributions) ---", flush=True)
-    print(f"DL vs Assumed Water: t-test p={p_val_ba:.4e}, Wilcoxon p={wilcox_ba.pvalue:.4e} (Significant: {p_val_ba < 0.05})", flush=True)
-    print(f"DL vs Naive NDWI:    t-test p={p_val_bc:.4e}, Wilcoxon p={wilcox_bc.pvalue:.4e} (Significant: {p_val_bc < 0.05})", flush=True)
+    print(f"DL vs Assumed Water: t-test p={p_val_ba:.4e}, Wilcoxon p={p_w_ba:.4e} (Significant: {p_val_ba < 0.05})", flush=True)
+    print(f"DL vs Naive NDWI:    t-test p={p_val_bc:.4e}, Wilcoxon p={p_w_bc:.4e} (Significant: {p_val_bc < 0.05})", flush=True)
     
     # Save table
     tables_dir = os.path.join(results_dir, 'tables')
     os.makedirs(tables_dir, exist_ok=True)
-    table_path = os.path.join(tables_dir, f'stage4_experiment_a_ablation_{target_type}.csv')
+    if target_type.lower() == 'chlorophyll':
+        table_filename = 'stage4_experiment_a_ablation_chlorophyll_masking_only.csv'
+    else:
+        table_filename = f'stage4_experiment_a_ablation_{target_type}.csv'
+    table_path = os.path.join(tables_dir, table_filename)
     ablation_df.to_csv(table_path, index=False)
     print(f"Saved Experiment A ablation table to {table_path}", flush=True)
     
     return ablation_df, sig_summary
 
 if __name__ == '__main__':
-    df_a = pd.read_csv('data/processed/matched_wq_cleaned/matched_set_a_ground_truth.csv', low_memory=False)
-    df_b = pd.read_csv('data/processed/matched_wq_cleaned/matched_set_b_dl_masked.csv', low_memory=False)
-    df_c = pd.read_csv('data/processed/matched_wq_cleaned/matched_set_c_ndwi_masked.csv', low_memory=False)
+    data_dir = PROJECT_ROOT / 'data/processed/matched_wq_cleaned'
+    df_a = pd.read_csv(data_dir / 'matched_set_a_ground_truth.csv', low_memory=False)
+    df_b = pd.read_csv(data_dir / 'matched_set_b_dl_masked.csv', low_memory=False)
+    df_c = pd.read_csv(data_dir / 'matched_set_c_ndwi_masked.csv', low_memory=False)
     
     for target in ['turbidity', 'chlorophyll']:
-        run_experiment_a_ablation(df_a, df_b, df_c, target_type=target, model_name='Gradient_Boosting')
+        run_experiment_a_ablation(
+            df_a, df_b, df_c,
+            target_type=target,
+            model_name='Gradient_Boosting',
+            results_dir=str(PROJECT_ROOT / 'results')
+        )

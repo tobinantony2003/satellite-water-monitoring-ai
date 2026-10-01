@@ -1,0 +1,5 @@
+condition,train_n,test_n,test_evaluation_scope,r2_physical,rmse_physical,mae_physical,r2_log,rmse_log,mae_log
+Condition (a) Assumed Water,80873,7152,"Full Test Set (N=7,152)",0.3291,23.1489,9.491,0.249,0.427,0.3266
+Condition (b) DL Masked,30503,7152,"Full Test Set (N=7,152)",0.2372,24.6828,10.237,0.2596,0.424,0.3276
+Condition (c) NDWI Masked,15447,7152,"Full Test Set (N=7,152)",0.1548,25.9824,11.5433,-0.0969,0.516,0.3984
+Condition (c) NDWI (Evaluated on NDWI>0 Test Only),15447,4414,"NDWI-Only Test (N=4,414)",0.3902,16.9655,9.5343,0.328,0.3889,0.2763

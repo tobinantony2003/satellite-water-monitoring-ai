@@ -1,0 +1,2 @@
+dataset,n_sites,n_samples,total_pairs,zero_window_overlap_pairs,zero_window_pct,zero_shared_month_pairs,zero_month_pct,mean_overlap_coefficient,mean_shared_months
+Chlorophyll-a Harmonized Native,18,6932,153,4,2.61,42,27.45,0.844,3.0

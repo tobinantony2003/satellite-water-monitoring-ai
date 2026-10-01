@@ -1,0 +1,7 @@
+target,condition,dataset,icc,var_re_site,var_resid,overall_r2_raw,overall_rmse_raw,overall_mae_raw,overall_bias_raw,overall_r2_log,total_samples,n_sites
+CDOM,Condition_a_GroundTruth,Secondary_CalibratedConversion,0.9179,0.1885,0.0169,-0.4285,20.99,14.83,-10.57,-0.1863,6748,7
+Chlorophyll-a,Condition_a_GroundTruth,Secondary_CalibratedConversion,0.8,0.3672,0.0918,-0.3217,19.16,11.06,-9.34,-0.135,30496,19
+CDOM,Condition_b_DLMasked,Secondary_CalibratedConversion,0.9364,0.1957,0.0133,-0.7223,22.92,17.35,-14.36,-0.3656,3131,6
+Chlorophyll-a,Condition_b_DLMasked,Secondary_CalibratedConversion,0.8129,0.3324,0.0765,-0.1571,21.25,10.09,-7.3,-0.1635,7276,18
+CDOM,Condition_c_NDWIMasked,Secondary_CalibratedConversion,0.9875,0.329,0.0042,-1.9042,21.01,17.13,-16.4,-2.039,1628,5
+Chlorophyll-a,Condition_c_NDWIMasked,Secondary_CalibratedConversion,0.9003,0.323,0.0358,-0.3894,9.43,5.79,-3.75,-0.5244,3490,14

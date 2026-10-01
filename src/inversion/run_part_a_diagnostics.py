@@ -136,9 +136,9 @@ def part_a3_turbidity_ablation_robustness():
     b_turb = df_b[df_b['target_type'] == target_type].copy()
     c_turb = df_c[df_c['target_type'] == target_type].copy()
     
-    # Held-out test set from common sites
-    common_sites = set(b_turb['site_no']).intersection(set(c_turb['site_no']))
-    test_sites = set(list(common_sites)[: max(1, len(common_sites) // 4)])
+    # Canonical held-out test set
+    from src.evaluation.splits import get_test_sites
+    test_sites = get_test_sites('turbidity')
     
     test_df = b_turb[b_turb['site_no'].isin(test_sites)].copy()
     train_b_full = b_turb[~b_turb['site_no'].isin(test_sites)].copy()
@@ -245,9 +245,9 @@ def part_a4_illinois_turbidity_failure():
     turb_b = df_b[df_b['target_type'] == 'turbidity'].copy()
     turb_c = df_c[df_c['target_type'] == 'turbidity'].copy()
     
-    # Common test sites
-    common_sites = set(turb_b['site_no']).intersection(set(turb_c['site_no']))
-    test_sites = set(list(common_sites)[: max(1, len(common_sites) // 4)])
+    # Canonical held-out test sites
+    from src.evaluation.splits import get_test_sites
+    test_sites = get_test_sites('turbidity')
     
     test_b = turb_b[turb_b['site_no'].isin(test_sites)].copy()
     test_il = test_b[test_b['basin'] == 'Illinois'].copy()

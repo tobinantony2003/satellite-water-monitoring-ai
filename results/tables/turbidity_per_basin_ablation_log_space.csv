@@ -1,0 +1,5 @@
+basin,n_test_samples,pct_test_set,target_var_log,dl_log_r2,ndwi_log_r2,delta_log_r2_dl_minus_ndwi,winner,dl_log_rmse,ndwi_log_rmse
+Illinois,486,6.8,0.0762,-4.3534,-1.8509,-2.5025,NDWI Mask,0.6388,0.4662
+Trinity,2479,34.7,0.0903,0.4879,0.4371,0.0508,DL Mask,0.215,0.2254
+Upper Colorado,1973,27.6,0.1654,-0.0348,0.1829,-0.2177,NDWI Mask,0.4137,0.3676
+Willamette,2214,31.0,0.0864,-2.2587,-3.2109,0.9522,DL Mask,0.5307,0.6033

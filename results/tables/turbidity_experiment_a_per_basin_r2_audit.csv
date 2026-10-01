@@ -1,0 +1,13 @@
+basin,condition,n_samples,n_sites,target_var_physical,target_var_log,r2_physical,r2_log,divergence_flag,rmse_physical,rmse_log,mae_physical,mae_log
+Illinois,Condition_(a)_Assumed_Water,486,4,16.69,0.0762,-12.9219,-3.0705,True,15.25,0.557,10.47,0.4601
+Illinois,Condition_(b)_DL_Masked,486,4,16.69,0.0762,-19.3641,-4.3534,True,18.44,0.6388,13.4,0.5463
+Illinois,Condition_(c)_NDWI_Masked,486,4,16.69,0.0762,-2.9373,-1.8509,True,8.11,0.4662,6.87,0.4076
+Trinity,Condition_(a)_Assumed_Water,2479,1,441.16,0.0903,0.3967,0.4682,False,16.31,0.2191,9.21,0.167
+Trinity,Condition_(b)_DL_Masked,2479,1,441.16,0.0903,0.5539,0.4879,False,14.03,0.215,8.24,0.1654
+Trinity,Condition_(c)_NDWI_Masked,2479,1,441.16,0.0903,0.4493,0.4371,False,15.59,0.2254,8.39,0.1652
+Upper Colorado,Condition_(a)_Assumed_Water,1973,2,2002.51,0.1654,0.2286,0.0882,False,39.3,0.3884,13.82,0.3107
+Upper Colorado,Condition_(b)_DL_Masked,1973,2,2002.51,0.1654,0.1707,-0.0348,True,40.75,0.4137,17.32,0.3389
+Upper Colorado,Condition_(c)_NDWI_Masked,1973,2,2002.51,0.1654,0.052,0.1829,False,43.57,0.3676,13.49,0.2949
+Willamette,Condition_(a)_Assumed_Water,2214,2,13.58,0.0864,-3.3361,-2.8157,True,7.67,0.5743,5.81,0.4972
+Willamette,Condition_(b)_DL_Masked,2214,2,13.58,0.0864,-3.1276,-2.2587,True,7.49,0.5307,5.13,0.449
+Willamette,Condition_(c)_NDWI_Masked,2214,2,13.58,0.0864,-4.4308,-3.2109,True,8.59,0.6033,6.47,0.5156

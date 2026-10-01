@@ -1,0 +1,7 @@
+training_pool,training_samples_N,subsample_seeds,log_r2,log_rmse,vs_ndwi_status
+Condition (a) Assumed Water (Full),80873,1,0.2527,0.4259,+0.0038 vs NDWI
+Condition (b) Raw DL Masked (Full Pool),30503,1,0.2661,0.4221,+0.0172 vs NDWI (Top Overall)
+"Condition (b) Clean DL Masked (Full Pool, No Contam)",14944,1,-0.1373,0.5255,-0.3863 vs NDWI
+Condition (b) Raw DL Subsampled (25 seeds),15447,25,0.2370 +/- 0.0263,0.4303 +/- 0.0074,-0.0119 (p=3.375e-02)
+"Condition (b) Clean DL Subsampled (25 seeds, N=14,000)",14000,25,-0.1514 +/- 0.0501,Evaluated,-0.4003 (p=1.824e-23)
+Condition (c) Naive NDWI Masked (Full Pool),15447,1,0.2489,0.4270,Baseline Reference

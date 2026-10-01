@@ -1,0 +1,7 @@
+experiment_benchmark,script_source_path,computation_space,details
+"Stage 3 Inversion Benchmarks (RF, XGB, MLP, Empirical)",src/inversion/train_inversion.py (lines 89-95),Physical Units,"oof_preds_log back-transformed via 10**log; compute_regression_metrics(y_raw, oof_preds_raw)"
+Experiment A Pooled Ablation (0.2047 -> 0.2904),src/evaluation/ablation.py (lines 75-78),Physical Units,"pred_raw = 10.0 ** pred_log; compute_regression_metrics(y_test_raw, pred_raw)"
+"Experiment A Per-Basin Breakdown (Trinity, Illinois, etc.)","src/evaluation/check_experiment_a_basin_breakdown.py (lines 81-84, 99-105)",Physical Units,"pred_raw = 10.0 ** pred_log; compute_regression_metrics(y_b, p_b)"
+CDOM & Chlorophyll-a MixedLM Spatial Block CV,"src/inversion/rerun_harmonized_diagnostics.py (lines 167-175, 198-207)",Dual Reported (Both Physical & Log),Both overall_r2_raw and overall_r2_log evaluated and exported to mixed_effects_3way_comparison.csv
+Experiment B (Cross-Basin Transferability),src/evaluation/transferability.py (lines 77-80),Physical Units,"pred_raw = 10.0 ** pred_log; compute_regression_metrics(y_test_raw, pred_raw)"
+Experiment C (Temporal Transferability),src/evaluation/temporal.py (lines 75-78),Physical Units,"pred_raw = 10.0 ** pred_log; compute_regression_metrics(y_test_raw, pred_raw)"

@@ -1,8 +1,14 @@
 import os
+import sys
+from pathlib import Path
 
 # Suppress joblib loky wmic CPU detection warning on modern Windows 11
 if 'LOKY_MAX_CPU_COUNT' not in os.environ:
     os.environ['LOKY_MAX_CPU_COUNT'] = str(os.cpu_count() or 4)
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 import numpy as np
 import pandas as pd
@@ -194,6 +200,12 @@ def run_experiment_b_transferability(
     return summary_df, pd.DataFrame([pooled_metrics])
 
 if __name__ == '__main__':
-    df_dl = pd.read_csv('data/processed/matched_wq_cleaned/matched_set_b_dl_masked.csv', low_memory=False)
+    data_path = PROJECT_ROOT / 'data/processed/matched_wq_cleaned/matched_set_b_dl_masked.csv'
+    df_dl = pd.read_csv(data_path, low_memory=False)
     for target in ['turbidity', 'chlorophyll']:
-        run_experiment_b_transferability(df_dl, target_type=target, model_name='Gradient_Boosting')
+        run_experiment_b_transferability(
+            df_dl,
+            target_type=target,
+            model_name='Gradient_Boosting',
+            results_dir=str(PROJECT_ROOT / 'results')
+        )

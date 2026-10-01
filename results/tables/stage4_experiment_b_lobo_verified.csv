@@ -1,0 +1,2 @@
+r2,rmse,mae,mape,bias,basin,paradigm,n_samples,n_sites
+0.07386143110524235,49.89851737946384,15.266650306028964,158.44508840586104,-7.72356332289396,All_5_Basins_Pooled,Pooled Joint (Spatial CV),37655,51

@@ -1,0 +1,3 @@
+model_configuration,macro_log_r2_mean,macro_log_r2_std,pooled_oof_log_r2,pooled_oof_log_rmse,wilcoxon_pval_vs_pooled
+Pooled_Baseline,-4.710271061512367,4.743517574145089,-0.5420268743451142,0.7774074627692803,1.0
+Cluster_Conditioned_OWT,-4.586117117629557,4.456683438206524,-0.5614164948009173,0.782279799004153,0.8125

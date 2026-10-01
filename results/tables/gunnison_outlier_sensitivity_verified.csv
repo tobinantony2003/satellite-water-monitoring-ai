@@ -1,0 +1,3 @@
+Condition,DL_UC_Log_R2,NDWI_UC_Log_R2,UC_Gap (DL - NDWI),DL_Micro_Log_R2,NDWI_Micro_Log_R2,DL_Macro_Log_R2,NDWI_Macro_Log_R2
+With 09152500 (Full Training Pool),-0.0346,-0.2789,0.2443,0.2596,-0.0969,-1.52,-2.2619
+Excluding 09152500 from Training,0.1113,-0.108,0.2193,0.279,0.0605,-1.5345,-1.8938

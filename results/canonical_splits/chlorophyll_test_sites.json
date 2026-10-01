@@ -1,0 +1,28 @@
+{
+  "target_type": "chlorophyll",
+  "description": "Canonical held-out test split for chlorophyll ablation and evaluation (overlapping with turbidity canonical test stations)",
+  "num_test_sites": 4,
+  "canonical_test_sites": [
+    5553700,
+    5558300,
+    14211720,
+    423784088133401
+  ],
+  "sample_counts": {
+    "condition_a_assumed_water": {
+      "train_samples": 19036,
+      "test_samples": 10254,
+      "total_samples": 29290
+    },
+    "condition_b_dl_masked": {
+      "train_samples": 5679,
+      "test_samples": 1253,
+      "total_samples": 6932
+    },
+    "condition_c_ndwi_masked": {
+      "train_samples": 2811,
+      "test_samples": 615,
+      "total_samples": 3426
+    }
+  }
+}

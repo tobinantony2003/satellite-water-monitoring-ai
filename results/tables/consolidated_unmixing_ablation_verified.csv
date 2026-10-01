@@ -1,0 +1,8 @@
+Approach,Train_N,Effective_N (N_eff),Micro_Log_R2,Micro_Log_RMSE,Macro_Log_R2,Illinois_Log_R2,Trinity_Log_R2,Upper Colorado_Log_R2,Willamette_Log_R2
+Condition (c) NDWI Full Pool,15447,15447,-0.0969,0.516,-2.2619,-4.0739,0.4468,-0.2789,-5.1415
+Condition (b) Raw DL Full Pool,30503,30503,0.2596,0.424,-1.52,-4.1804,0.4979,-0.0346,-2.3631
+Condition (b) Raw DL Subsampled (25-seed mean),15447,15447,0.2596,0.424,-1.52,-4.1804,0.4979,-0.0346,-2.3631
+Condition (b) Hard-Filtered Clean DL (NDVI<=0),14146,14146,-0.1091,0.5189,-2.587,-5.6409,0.4721,-0.3901,-4.7892
+Unmixing-Weighted DL (Linear w=f_water),30503,27488,0.2706,0.4208,-1.3348,-3.4156,0.4789,-0.0641,-2.3385
+Unmixing-Weighted DL (Quadratic w=f_water^2),30503,25091,0.2597,0.4239,-1.3332,-3.3256,0.4712,-0.11,-2.3682
+Unmixing-Weighted DL (No 09152500 Variant),30454,27452,0.2624,0.4232,-1.4398,-3.8393,0.482,-0.0599,-2.3417

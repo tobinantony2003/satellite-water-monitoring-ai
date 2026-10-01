@@ -116,3 +116,4 @@ def get_inversion_models(in_features: int) -> Dict[str, Any]:
         'Deep_Spectral_MLP': PyTorchMLPRegressor(in_features=in_features, epochs=30)
     }
     return models
+

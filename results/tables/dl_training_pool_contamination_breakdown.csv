@@ -1,0 +1,6 @@
+basin,total_dl_samples,both_retained_n,both_retained_pct,dl_exclusive_n,likely_contaminated_n (NDVI>0),likely_contaminated_pct_of_ex,likely_legitimate_n (NDVI<=0),likely_legitimate_pct_of_ex
+Delaware,5702,829,14.5,4873,4794,98.4,79,1.6
+Illinois,4207,632,15.0,3575,3159,88.4,416,11.6
+Trinity,9891,8805,89.0,1086,1055,97.1,31,2.9
+Upper Colorado,7645,3356,43.9,4289,3584,83.6,705,16.4
+Willamette,3058,64,2.1,2994,2994,100.0,0,0.0

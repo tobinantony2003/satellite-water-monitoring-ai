@@ -1,13 +1,20 @@
 import os
+import sys
+from pathlib import Path
 
 # Suppress joblib loky wmic CPU detection warning on modern Windows 11
 if 'LOKY_MAX_CPU_COUNT' not in os.environ:
     os.environ['LOKY_MAX_CPU_COUNT'] = str(os.cpu_count() or 4)
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from typing import Dict, Tuple
 
 from src.inversion.models import get_inversion_models
@@ -59,17 +66,28 @@ def run_experiment_c_temporal(
     train_metrics = compute_regression_metrics(train_df['MeasurementValue'].values, pred_train_raw)
     train_metrics['period'] = 'Train (2015-2021)'
     train_metrics['n_samples'] = len(train_df)
+    train_metrics['r2_physical'] = train_metrics['r2']
+    train_metrics['rmse_physical'] = train_metrics['rmse']
+    train_metrics['r2_log'] = float(r2_score(y_train_log, pred_train_log))
+    train_metrics['rmse_log'] = float(np.sqrt(mean_squared_error(y_train_log, pred_train_log)))
+    train_metrics['mae_log'] = float(mean_absolute_error(y_train_log, pred_train_log))
     
     # Out-of-time test performance
     pred_test_log = m.predict(X_test_s)
     pred_test_raw = 10.0 ** pred_test_log
+    y_test_log = np.log10(np.clip(y_test_raw, 1e-4, None))
     test_metrics = compute_regression_metrics(y_test_raw, pred_test_raw)
     test_metrics['period'] = 'Test (2022-2024)'
     test_metrics['n_samples'] = len(test_df)
+    test_metrics['r2_physical'] = test_metrics['r2']
+    test_metrics['rmse_physical'] = test_metrics['rmse']
+    test_metrics['r2_log'] = float(r2_score(y_test_log, pred_test_log))
+    test_metrics['rmse_log'] = float(np.sqrt(mean_squared_error(y_test_log, pred_test_log)))
+    test_metrics['mae_log'] = float(mean_absolute_error(y_test_log, pred_test_log))
     
     temporal_df = pd.DataFrame([train_metrics, test_metrics])
-    print(f"Temporal Train Metrics: R^2 = {train_metrics['r2']:.4f} | RMSE = {train_metrics['rmse']:.3f}", flush=True)
-    print(f"Temporal Test Metrics:  R^2 = {test_metrics['r2']:.4f} | RMSE = {test_metrics['rmse']:.3f}", flush=True)
+    print(f"Temporal Train Metrics: Physical R^2 = {train_metrics['r2_physical']:.4f} (RMSE = {train_metrics['rmse_physical']:.3f}) | Log R^2 = {train_metrics['r2_log']:.4f} (RMSE = {train_metrics['rmse_log']:.4f})", flush=True)
+    print(f"Temporal Test Metrics:  Physical R^2 = {test_metrics['r2_physical']:.4f} (RMSE = {test_metrics['rmse_physical']:.3f}) | Log R^2 = {test_metrics['r2_log']:.4f} (RMSE = {test_metrics['rmse_log']:.4f})", flush=True)
     
     # Save table
     tables_dir = os.path.join(results_dir, 'tables')
@@ -81,7 +99,13 @@ def run_experiment_c_temporal(
     return temporal_df
 
 if __name__ == '__main__':
-    df_dl = pd.read_csv('data/processed/matched_wq_cleaned/matched_set_b_dl_masked.csv', low_memory=False)
+    data_path = PROJECT_ROOT / 'data/processed/matched_wq_cleaned/matched_set_b_dl_masked.csv'
+    df_dl = pd.read_csv(data_path, low_memory=False)
     for target in ['turbidity', 'chlorophyll']:
-        run_experiment_c_temporal(df_dl, target_type=target, model_name='Gradient_Boosting')
+        run_experiment_c_temporal(
+            df_dl,
+            target_type=target,
+            model_name='Gradient_Boosting',
+            results_dir=str(PROJECT_ROOT / 'results')
+        )
 

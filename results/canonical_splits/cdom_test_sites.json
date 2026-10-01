@@ -1,0 +1,15 @@
+{
+  "target_type": "cdom",
+  "description": "Canonical held-out test split for CDOM ablation and evaluation (overlapping with turbidity canonical test stations)",
+  "num_test_sites": 1,
+  "canonical_test_sites": [
+    14211720
+  ],
+  "sample_counts": {
+    "condition_b_dl_masked": {
+      "train_samples": 2150,
+      "test_samples": 383,
+      "total_samples": 2533
+    }
+  }
+}

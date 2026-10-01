@@ -32,14 +32,10 @@ def main():
         'Condition_(c)_NDWI_Masked': df_c[df_c['target_type'] == target_type].copy(),
     }
     
-    # Replicate exact test split from ablation.py
-    common_sites = set(datasets['Condition_(b)_DL_Masked']['site_no']).intersection(
-        set(datasets['Condition_(c)_NDWI_Masked']['site_no'])
-    )
-    test_sites = set(list(common_sites)[: max(1, len(common_sites) // 4)])
-    
-    print(f"\nTotal common sites between DL and NDWI: {len(common_sites)}")
-    print(f"Held-out test sites ({len(test_sites)} sites): {test_sites}")
+    # Use canonical held-out test split
+    from src.evaluation.splits import get_test_sites
+    test_sites = get_test_sites(target_type)
+    print(f"\nHeld-out test sites ({len(test_sites)} sites): {sorted(list(test_sites))}")
     
     test_df = datasets['Condition_(b)_DL_Masked'][datasets['Condition_(b)_DL_Masked']['site_no'].isin(test_sites)].copy()
     print(f"Total held-out test samples: {len(test_df):,} across {test_df['basin'].nunique()} basins.")

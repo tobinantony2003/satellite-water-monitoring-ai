@@ -1,0 +1,8 @@
+condition,training_N,subsample_seeds,log_r2,log_rmse,status
+Condition (a) Assumed Water (Full),30503,1,0.2527,0.4259,Baseline Full
+Condition (b) Raw DL (Full Pool),30503,1,0.2661,0.4221,Full Pool (Micro Top)
+"Condition (b) Clean DL (Full Clean Pool, N=14,917)",14917,1,-0.0282,0.4996,All Likely Contaminated Excluded
+"Condition (b) Clean DL Subsampled (N=14,000, 25 seeds)",14000,25,0.0111 +/- 0.0394,0.4899 +/- 0.0098,Clean DL vs NDWI: p=2.567e-19
+"Condition (b) Raw DL Subsampled (N=14,000, 25 seeds)",14000,25,0.2430 +/- 0.0293,0.4286 +/- 0.0083,Raw DL vs NDWI: p=0.013
+"Condition (c) NDWI Subsampled (N=14,000, 25 seeds)",14000,25,0.2680 +/- 0.0372,0.4214 +/- 0.0107,Matched NDWI Subsample
+"Condition (c) NDWI (Full Pool, N=15,447)",15447,1,0.2489,0.4270,Full Pool Reference

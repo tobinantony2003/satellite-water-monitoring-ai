@@ -1,0 +1,6 @@
+basin,ndwi_pool_n,ndwi_pct,dl_full_pool_n,dl_full_pct,dl_subsample_mean_n,dl_subsample_pct,dl_contam_samples,dl_contam_rate_pct
+Delaware,1019,6.6,5702,18.7,2886.1,18.7,4794,84.1
+Illinois,764,4.9,4207,13.8,2121.5,13.7,3132,74.4
+Trinity,10005,64.8,9891,32.4,5024.8,32.5,1055,10.7
+Upper Colorado,3479,22.5,7645,25.1,3865.6,25.0,3584,46.9
+Willamette,180,1.2,3058,10.0,1549.0,10.0,2994,97.9

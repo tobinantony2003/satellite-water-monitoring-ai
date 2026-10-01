@@ -1,0 +1,46 @@
+{
+  "target_type": "turbidity",
+  "description": "Canonical held-out test split for turbidity ablation and evaluation",
+  "num_test_sites": 9,
+  "canonical_test_sites": [
+    5545750,
+    5553700,
+    5558300,
+    9070500,
+    9071750,
+    14158100,
+    14211720,
+    295554095093402,
+    423784088133401
+  ],
+  "sample_counts": {
+    "condition_a_assumed_water": {
+      "train_samples": 80873,
+      "test_samples": 23403,
+      "total_samples": 104276
+    },
+    "condition_b_dl_masked": {
+      "train_samples": 30503,
+      "test_samples": 7152,
+      "total_samples": 37655,
+      "test_basin_breakdown": {
+        "Trinity": 2479,
+        "Willamette": 2214,
+        "Upper Colorado": 1973,
+        "Illinois": 486
+      }
+    },
+    "condition_c_ndwi_masked": {
+      "train_samples": 15447,
+      "test_samples": 4414,
+      "total_samples": 19861,
+      "test_basin_breakdown": {
+        "Trinity": 2368,
+        "Upper Colorado": 1787,
+        "Illinois": 213,
+        "Willamette": 46
+      }
+    }
+  },
+  "sha256_checksum": "9b12a81907cb5b5c98a3915be170381622b10f54b66df04431e78eb512cbb543"
+}
