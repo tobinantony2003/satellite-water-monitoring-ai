@@ -57,6 +57,9 @@ class PyTorchMLPRegressor:
         self.y_max = 3.5
 
     def fit(self, X: np.ndarray, y: np.ndarray):
+        # A new estimator is created for each CV fold by the caller. Rebuild the
+        # network here as an additional guard if fit() is called more than once.
+        self.model = SpectralMLP(self.in_features).to(self.device)
         self.y_min = float(np.min(y))
         self.y_max = float(np.max(y))
         dataset = TensorDataset(torch.from_numpy(X).float(), torch.from_numpy(y).float())
@@ -116,4 +119,3 @@ def get_inversion_models(in_features: int) -> Dict[str, Any]:
         'Deep_Spectral_MLP': PyTorchMLPRegressor(in_features=in_features, epochs=30)
     }
     return models
-
